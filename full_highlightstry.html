@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Highlights</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: white;
+    }
+
+    #fullHighlightsSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 2rem;
+      min-height: 100vh;
+    }
+
+    h2.highlight-title {
+      font-size: 2.5rem;
+      color: #00feba;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 10px #00feba;
+    }
+
+    .full-highlight-card {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid #5b86e5;
+      border-radius: 15px;
+      margin: 2rem 0;
+      padding: 15px;
+      width: 100%;
+      max-width: 900px;
+      height: 180px;
+      opacity: 0;
+      transform: translateX(100%);
+      transition: all 0.6s ease-in-out;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    }
+
+    .full-highlight-card.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .full-highlight-card img {
+      width: 35%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-right: 20px;
+    }
+
+    .full-highlight-card .text {
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .back-button {
+      margin-top: 2rem;
+      background-color: #00feba;
+      color: #111;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+      transition: background 0.3s ease;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background: #5b86e5;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <section id="fullHighlightsSection">
+    <h2 class="highlight-title">🌟 All Highlights</h2>
+
+    <div class="full-highlight-card">
+      <img src="./Assets/FreeCC.PNG" alt="Responsive Design">
+      <div class="text">
+        <h3>Responsive Web Design</h3>
+        <p>Certified from FreeCodeCamp in responsive design covering HTML, CSS, and layout techniques.</p>
+      </div>
+    </div>
+
+    <div class="full-highlight-card">
+      <img src="./Assets/FreeCCfd.PNG" alt="Frontend Libraries">
+      <div class="text">
+        <h3>Frontend Libraries</h3>
+        <p>Completed certification in JavaScript, React, jQuery, and Sass from FreeCodeCamp.</p>
+      </div>
+    </div>
+
+    <div class="full-highlight-card">
+      <img src="./Assets/SMIT.PNG" alt="Mass IT Training">
+      <div class="text">
+        <h3>SAYANI Web & App Training</h3>
+        <p>Completed crash course on full-stack development including mobile and web apps.</p>
+      </div>
+    </div>
+
+    <div class="full-highlight-card">
+      <img src="./Assets/Dev.jpeg" alt="DevDay">
+      <div class="text">
+        <h3>DevDay Competition</h3>
+        <p>Participated in FAST DevDay competition showcasing frontend skills.</p>
+      </div>
+    </div>
+
+    <div class="full-highlight-card">
+      <img src="./Assets/Procom.jpeg" alt="Procom">
+      <div class="text">
+        <h3>PROCOM Hackathon</h3>
+        <p>Represented in PROCOM web hackathon under FAST's inter-university competition.</p>
+      </div>
+    </div>
+
+    <div class="full-highlight-card">
+      <img src="./Assets/Mquiz.jpeg" alt="Quiz">
+      <div class="text">
+        <h3>Shield Off Quiz Winner</h3>
+        <p>Won inter-college quiz competition held at Adamjee College.</p>
+      </div>
+    </div>
+
+    <div class="full-highlight-card">
+      <img src="./Assets/Math.jpeg" alt="Math Score">
+      <div class="text">
+        <h3>Top Scorer in Math</h3>
+        <p>189/200 marks in both 1st and 2nd year in mathematics during college.</p>
+      </div>
+    </div>
+
+    <a class="back-button" href="index.html#highlights">⬅ Back to Highlights</a>
+  </section>
+
+  <script>
+    const fullCards = document.querySelectorAll('.full-highlight-card');
+    function revealFullCards() {
+      fullCards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add('show');
+        }, index * 300);
+      });
+    }
+    window.addEventListener("load", revealFullCards);
+  </script>
+</body>
+</html>

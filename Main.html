@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥🗿🔥</title>
+    <link rel="stylesheet" href="Style.Css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<style>
+  body {
+    font-family: 'Ubuntu', sans-serif;
+  }
+</style>
+
+</head>
+<body>
+ <div class="door-container">
+  <div class="door left-door"></div>
+  <div class="door right-door"></div>
+  <div class="center-circle">
+    <span class="circle-text">A</span>
+  </div>
+</div>
+
+<div class="main-content hidden">
+  <!-- Your existing frame and hero content -->
+</div>
+
+
+
+    <section class="hero" id="hero">
+      
+    
+    <div class="frame-container">
+        <div class="frame1-container">
+  <!-- Toggle Arrow (Top-Left Corner) -->
+  <!-- Arrow Toggle Button -->
+<div class="corner top-left arrow-toggle" onclick="toggleSidebar()" id="arrowBtn">
+  <img src="./Assets/arrow.jpeg" class="icon arrow-icon" />
+</div>
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  
+  <a href="#hero" class="nav-btn" onclick="closeSidebar()"><i class="fas fa-home"></i><span>Home</span></a>
+  <a href="#about" class="nav-btn"><i class="fas fa-user"></i><span>About</span></a>
+  <a href="#skillsSection" class="nav-btn"><i class="fas fa-code"></i><span>Skills</span></a>
+  <a href="#projects" class="nav-btn"><i class="fas fa-briefcase"></i><span>Projects</span></a>
+  <a href="#previewSection" class="nav-btn"><i class="fas fa-star"></i><span>Highlights</span></a>
+  <a href="#contact" class="nav-btn"><i class="fas fa-envelope"></i><span>Contact</span></a>
+</div>
+
+
+
+<!-- Mini Sidebar Line (Always Visible) -->
+<!-- Mini Bar (simple vertical line) -->
+ <!-- Mini Sidebar Trigger -->
+<!-- Mini Sidebar -->
+<div id="miniBar">
+  <!-- <div class="arrow-toggle" onclick="expandNavbar()">
+    <i class="fas fa-chevron-right"></i>
+  </div> -->
+  <a href="#hero" class="nav-icon"><i class="fas fa-home"></i></a>
+  <a href="#about" class="nav-icon"><i class="fas fa-user"></i></a>
+  <a href="#skillsSection" class="nav-icon"><i class="fas fa-code"></i></a>
+  <a href="#projects" class="nav-icon"><i class="fas fa-briefcase"></i></a>
+  <a href="#previewSection" class="nav-icon"><i class="fas fa-star"></i></a>
+  <a href="#contact" class="nav-icon"><i class="fas fa-envelope"></i></a>
+</div>
+
+
+
+<!-- Full Sidebar (Hidden by Default) -->
+<div class="sidebar-expanded" id="fullSidebar">
+  <!-- Close Button inside Full Sidebar -->
+<!-- <div class="close-toggle" onclick="closeSidebar()">
+  <i class="fas fa-chevron-left"></i>
+</div> -->
+
+  <a href="#hero" class="nav-btn">🏠 Home</a>
+  <a href="#about" class="nav-btn">👤 About</a>
+  <a href="#skillsSection" class="nav-btn">💻 Skills</a>
+  <a href="#projects" class="nav-btn">📁 Projects</a>
+  <a href="#previewSection" class="nav-btn">Highlights</a>
+  <a href="#contact" class="nav-btn">📨 Contact</a>
+</div>
+
+<!-- All Page Content -->
+<div class="main-content">
+
+  <!-- Top-right corner left empty -->
+
+  <!-- Bottom-right - GitHub
+  <div class="corner bottom-right">
+    <img src="./Assets/Github.jpeg" alt="GitHub" class="icon">
+  </div>
+
+  <!-- 
+  <div class="corner bottom-left">
+    <img src="./Assets/vscode.jpeg" alt="VS Code" class="icon">
+  </div> -->
+
+  <!-- Top-left inner - Dev C++ -->
+  <!-- <div class="corner devcpp-icon">
+    <img src="./Assets/Embarcadero.jpeg" alt="Dev C++" class="icon">
+  </div> -->
+
+
+  <span class="name">AHMED AFFAN RAZA</span>
+        <div class="carousel">
+      <span class="text t1">CS Student</span>
+      <span class="text t2">Cyber & AI Enthusiast</span>
+      <span class="text t3">Aspiring Developer</span>
+    </div>
+</div></div></section>
+
+
+
+  <section class="about-section" id="about">
+    <div class="glow-title">About Me</div>
+    <div class="typing-text" id="type-text"></div>
+
+    <div class="about-container" id="aboutContent">
+      <div class="about-content">
+        <p>I'm <span class="highlight">Ahmed Affan</span>, a <span class="highlight">Computer Science</span> student at <span class="highlight">FAST Karachi</span> and proud graduate of Adamjee College.</p>
+        <p>I'm a passionate <span class="highlight">Developer</span> who blends logical thinking with creative design.My passion for <span class="highlight">logic</span> and <span class="highlight">math</span> led me to explore <span class="highlight">programming</span> and <span class="highlight">problem-solving</span>.
+        I'm an energetic, chill, and passionate learner who believes in building <span class="highlight">clarity</span> through creativity.I love designing <span class="highlight">systems</span> that not only work but feel good to use.</p>
+      </div>
+      <div class="about-image">
+        <img src="./Assets/mine4.jpg" alt="Ahmed Affan">
+      </div>
+    </div>
+
+    <div class="about-goals">
+      <div class="goal-box left-box">
+        <h3>🎯 Current Focus<br></h3>
+<ul>
+  <br><li>🧠 Working on DSA</li>
+  <br><li>💻 Creating a frontend and responsive UIs</li>
+  <br><li>🔁 Sharpening logic by teaching</li>
+  <br><li>🌱 Growing personally by building confidence</li>
+</ul>
+
+      </div>
+      <div class="goal-box right-box">
+        <h3>🌟 Personal Hobbies<br></h3>
+<ul>
+  <br><li>♟️ Chess, puzzles & tactical mind games —</li>
+  <br><li>📝 Writing thoughts and ideas</li>
+  <br><li>🎬 Content Writing & video editing</li>
+  <br><li>🏏 Cricket & Fitness</li>
+</ul>
+
+      </div>
+    </div>
+
+    <div class="about-skills-alt" id="skillsSection">
+      <h3 class="skills-title">💼 Core Skills</h3>
+      <div class="emoji-launch" id="emoji-launch">
+        <span>🧠</span>
+        <span>⚙️</span>
+        <span>🏁</span>
+        <span>📐</span>
+        <span>🎨</span>
+        <span>🔍</span>
+      </div>
+   <div class="skills-grid" id="skills-grid">
+  <div class="skill-card">
+    <h4>C Programming</h4>
+    <p><br>Mastering structures, functions & core logic — building from memory upwards with precision.</p>
+  </div>
+  <div class="skill-card">
+    <h4>C++ & OOP</h4>
+    <p><br>Applied OOP in real projects with a love for inheritance, abstraction, and system logic.</p>
+  </div>
+  <div class="skill-card">
+    <h4>Competitive Coding</h4>
+    <p><br>Active in coding competitions — focused on fast logic, optimization, and problem intuition.</p>
+  </div>
+  <div class="skill-card">
+    <h4>Math & Logic</h4>
+    <p><br>Obsessed with mathematical depth — from number theory to algorithmic reasoning.</p>
+  </div>
+  <div class="skill-card">
+    <h4>Creative Frontend</h4>
+    <p><br>Every pixel matters — I design with animations, details, and responsive harmony.</p>
+  </div>
+  <div class="skill-card">
+    <h4>Clean Execution</h4>
+    <p><br>Writing logic that's simple, readable, and powerful — code anyone can understand.</p>
+  </div>
+</div>
+  </section>
+
+
+<!-- Add this to your HTML inside <body> -->
+<section class="projects-section" id="projects">
+  <h2 class="project-title">🚀 Featured Projects</h2>
+  <div class="projects-wrapper">
+    
+    <!-- Left Card -->
+    <div class="project-card left">
+      <img src="./Assets/ott.png" alt="OTT Project" />
+      <h3>OTT Streaming Website</h3>
+      <p>🎬 Frontend platform for series & films with responsive UI & carousels.</p>
+      <a href="https://github.com/Ahmedre15/LABPROJECT" target="_blank">View Repo</a>
+    </div>
+
+    <!-- Center Card -->
+    <div class="project-card center">
+      <img src="./Assets/diary.PNG" alt="Diary Project" />
+      <h3>Diary Management System</h3>
+      <p>📓 C-based CLI diary app using file handling and secure access.</p>
+      <a href="https://github.com/Ahmedre15/AVIEW-DIARY-PF-Project-" target="_blank">View Repo</a>
+    </div>
+
+    <!-- Right Card -->
+    <div class="project-card right">
+      <img src="./Assets/Pokemon.PNG" alt="Pokemon Project" />
+      <h3>Pokémon Web Clone</h3>
+      <p>⚡ HTML/CSS/JS based clone with fun animations and clean layout.</p>
+      <a href="https://github.com/Ahmedre15/Pokemon" target="_blank">View Repo</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Highlights Section -->
+<!-- HIGHLIGHT SECTION -->
+<section id="previewSection">
+  <h2 class="highlight-title">🌟 Highlights</h2>
+  <div class="preview-container">
+    <div class="preview-card">
+      <img src="./Assets/FreeCC.PNG" alt="">
+      <h3>Web Design Certification</h3>
+    </div>
+    <div class="preview-card">
+      <img src="./Assets/SMIT.PNG" alt="">
+      <h3>SMIT Course</h3>
+    </div>
+    <div class="preview-card">
+      <img src="./Assets/Mquiz.jpeg" alt="">
+      <h3>Quiz Winner</h3>
+    </div>
+  </div>
+  <button class="view-more-btn" id="viewMoreBtn">View More →</button>
+</section>
+
+<!-- FULL HIGHLIGHT OVERLAY -->
+<div class="highlight-overlay" id="highlightOverlay">
+  <div class="overlay-header">
+    <h2 class="highlight-title">🌟 All Highlights</h2>
+    <button class="close-btn" id="closeBtn">Back</button>
+  </div>
+  <div class="slider-vertical" id="sliderVertical">
+    <div class="highlight-full-card">
+      <img src="./Assets/FreeCC.PNG" class="highlight-img" alt="">
+      <div class="highlight-info">
+        <h3>Responsive Web Design</h3>
+        <p>I completed FreeCodeCamp’s Responsive Web Design certification, mastering hands-on coding. From semantic HTML to advanced CSS Flexbox and Grid, I built several projects including remakes, landing pages, and survey forms — all with responsive, mobile-first design principles.</p>
+      </div>
+    </div>
+
+    <div class="highlight-full-card">
+      <img src="./Assets/FreeCCfd.PNG" class="highlight-img" alt="">
+      <div class="highlight-info">
+        <h3>Frontend Libraries</h3>
+        <p>Through FreeCodeCamp’s Frontend Libraries course, I gained practical experience in building interactive UIs, managing state, styling, and creating dynamic behavior. I built some small projects strengthening my frontend foundations.</p>
+      </div>
+    </div>
+
+    <div class="highlight-full-card">
+      <img src="./Assets/SMIT.PNG" class="highlight-img" alt="">
+      <div class="highlight-info">
+        <h3>SAYANI Mass IT Training</h3>
+        <p>I successfully completed a crash course in Web and App Development from Saylani Mass IT Training. The program focused on practical exposure to modern web stacks, including HTML5, CSS3, and an introduction to Android app development. It included weekly project submissions and different quizzes, helping me build strong fundamentals in both frontend and design.</p>
+      </div>
+    </div>
+
+    <div class="highlight-full-card">
+      <img src="./Assets/Dev.jpeg" class="highlight-img" alt="">
+      <div class="highlight-info">
+        <h3>FAST DevDay</h3>
+        <p>Participated in FAST University's DevDay 2024 and competed in two intellectually intense events: Competitive Programming and Code Roulette. Faced real-world algorithmic challenges under strict time pressure. This experience sharpened my logic, adaptability, and coding reflexes, while collaborating and learning alongside top</p>
+      </div>
+    </div>
+
+    <div class="highlight-full-card">
+      <img src="./Assets/Procom.jpeg" class="highlight-img" alt="">
+      <div class="highlight-info">
+        <h3>PROCOM Participant</h3>
+        <p>Contributed to a futuristic AI-based project titled "Interstellar Intelligence" at FAST University's PROCOM 2024. My role focused on software testing and simulating real-world implementation scenarios for the system. The event tested creativity, technical depth, and problem-solving under simulated industry conditions.</p>
+      </div>
+    </div>
+
+    <div class="highlight-full-card">
+      <img src="./Assets/Mquiz.jpeg" class="highlight-img" alt="">
+      <div class="highlight-info">
+        <h3>Quiz Winner – Shield Off</h3>
+        <p>Led my team to victory in a high-stakes, multi-round math quiz against some of the brightest students across the board. The competition included logical questions and analytical problem-solving. This win reflected not only subject mastery but also strategic team coordination and time management.
+</p>
+      </div>
+    </div>
+
+    <div class="highlight-full-card">
+      <img src="./Assets/Math.jpeg" class="highlight-img" alt="">
+      <div class="highlight-info">
+        <h3>Top Math Scores</h3>
+        <p>Achieved 189 out of 200 in Mathematics in both years of Intermediate Pre-Engineering. This consistent academic performance reflects my strong logical reasoning, attention to detail, and analytical skills — all of which fuel my problem-solving ability in both programming and real-world challenges.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- CONTACT SECTION -->
+<!-- 📬 CONTACT SECTION -->
+<section id="contact" class="contact-section">
+  <h2 class="contact-title">📬 Contact Me</h2>
+
+  <div class="contact-container">
+
+    <!-- Developer Contacts -->
+    <div class="contact-block">
+      <h3>💻 Developer Profiles</h3>
+      <p><strong>Email:</strong> <a href="mailto:ahmedaffanre15@gmail.com?subject=Collaboration%20Opportunity&body=Hey%20Affan,%0D%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20connect!">
+  <button style="padding: 10px 20px; background: #00feba; color: #111; border: none; border-radius: 25px; font-weight: bold;">
+    📩 ahmedaffanre15@gmail.com
+  </button>
+</a>
+
+</p>
+      <div class="contact-icons special-icons">
+        <a href="https://github.com/Ahmedre15" target="_blank" title="GitHub (Code Repos)">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ahmed-affan-raza-853b85346" target="_blank" title="LinkedIn (Professional)">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/affan_younotknow?igsh=aXlrbWY5Z2QxZ2Zt" target="_blank" title="Instagram (Web Projects)">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Cricket-related Contacts -->
+    <div class="contact-block">
+      <h3>🏏 Cricket Content</h3>
+      <p><strong>Email:</strong> <a href="mailto:cricket.ahmed54@gmail.com">cricket.ahmed54@gmail.com</a></p>
+      <div class="contact-icons">
+        <a href="https://www.instagram.com/crictiquehq?igsh=MXd2eWlqaGRldHdwcg==" target="_blank" title="Instagram (Cricket Reels & Updates)">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- General Socials -->
+    <div class="contact-block">
+      <h3>🌐 Other Socials</h3>
+      <p><strong>Email (General):</strong> <a href="mailto:ahmedaffanraza@gmail.com">ahmedaffanraza@gmail.com</a></p>
+      <div class="contact-icons">
+        <a href="https://x.com/edits_historic" target="_blank" title="Twitter/X">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/ahmedaffanre2.0" target="_blank" title="Instagram (Lifestyle)">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+  <!-- your hero, about, skills etc -->
+</div>
+
+
+
+
+
+
+<script>
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      if (window.location.hash) {
+        history.replaceState(null, null, ' ');
+        window.scrollTo(0, 0);
+      }
+    }, 0);
+  });
+</script>
+
+<script>
+  window.addEventListener('load', () => {
+    // Wait a bit before split
+    setTimeout(() => {
+      document.querySelector('.left-door').style.transform = 'translateX(-100%)';
+      document.querySelector('.right-door').style.transform = 'translateX(100%)';
+    }, 1000);
+
+    // After animation, hide doors and show main content
+    setTimeout(() => {
+      document.querySelector('.door-container').style.display = 'none';
+      document.querySelector('.main-content').classList.remove('hidden');
+    }, 3000);
+  });
+</script>
+
+
+
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const arrow = document.getElementById("arrowBtn").querySelector(".arrow-icon");
+
+    if (sidebar.style.left === "0px") {
+      sidebar.style.left = "-100%";
+      arrow.classList.remove("arrow-rotated");
+    } else {
+      sidebar.style.left = "0px";
+      arrow.classList.add("arrow-rotated");
+    }
+  }
+</script>
+
+  <script>
+    const text = "";
+    const el = document.getElementById("type-text");
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        el.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 150);
+      }
+    }
+    typeWriter();
+
+    const observerOptions = { threshold: 0.3 };
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+     if (entry.isIntersecting) {
+  if (entry.target.id === "aboutContent") {
+    entry.target.classList.add("visible");
+  }
+
+  if (entry.target.classList.contains("left-box")) {
+    entry.target.classList.remove("animate-left");
+    void entry.target.offsetWidth; // 💡 forces reflow
+    entry.target.classList.add("animate-left");
+  }
+
+  if (entry.target.classList.contains("right-box")) {
+    entry.target.classList.remove("animate-right");
+    void entry.target.offsetWidth;
+    entry.target.classList.add("animate-right");
+  }
+
+  if (entry.target.id === "skillsSection") {
+    animateEmojis(); // always fly again
+  }
+}
+      });
+    }, observerOptions);
+
+    observer.observe(document.getElementById("aboutContent"));
+    observer.observe(document.getElementById("skillsSection"));
+    observer.observe(document.querySelector(".left-box"));
+    observer.observe(document.querySelector(".right-box"));
+
+   function animateEmojis() {
+  const emojis = document.querySelectorAll("#emoji-launch span");
+  const cards = document.querySelectorAll(".skills-grid .skill-card");
+
+  emojis.forEach((emoji, idx) => {
+    const target = cards[idx];
+
+    // Reset to original position instantly
+    emoji.style.transition = "none";
+    emoji.style.opacity = 0;
+    emoji.style.transform = `translate(0, 0)`;
+
+    // Force reflow so next transform is clean
+    void emoji.offsetWidth;
+
+    // Now animate to the card again
+    const emojiRect = emoji.getBoundingClientRect();
+    const cardRect = target.getBoundingClientRect();
+    const dx = cardRect.left - emojiRect.left;
+    const dy = cardRect.top - emojiRect.top;
+
+    emoji.style.transition = "transform 1s ease-in-out, opacity 0.5s ease-in-out";
+    emoji.style.opacity = 1;
+    emoji.style.transform = `translate(${dx}px, ${dy}px)`;
+  });
+}
+  </script>
+<script>
+  const sidebar = document.getElementById('sidebar');
+  const miniBar = document.getElementById('miniBar');
+  const skillsSection = document.getElementById('skillsSection');
+
+  let doorDone = false;
+
+  // After door animation (5 seconds)
+  setTimeout(() => {
+    doorDone = true;
+    if (sidebar.style.left !== "0px") {
+      miniBar.style.display = "flex";
+    }
+  }, 3000); // adjust based on your door duration
+
+  // Expand full sidebar (toggle)
+//   function expandNavbar() {
+//     sidebar.style.left = "0px";
+//     miniBar.style.display = "none";
+//   }
+// function closeSidebar() {
+//   document.getElementById("sidebar").style.left = "-200%";
+//   if (doorDone) {
+//     document.getElementById("miniBar").style.display = "flex";
+//   }
+// }
+
+  // Close sidebar when reaching skills section and show mini bar again
+  window.addEventListener("scroll", () => {
+    if (!skillsSection || !doorDone) return;
+
+    const rect = skillsSection.getBoundingClientRect();
+    const inView = rect.top <= window.innerHeight * 0.7 && rect.bottom >= 0;
+
+    if (inView && sidebar.style.left === "0px") {
+      sidebar.style.left = "-200%";
+      miniBar.style.display = "flex";
+    }
+  });
+
+  // Watch sidebar visibility manually
+  const observerSidebar = new MutationObserver(() => {
+    if (sidebar.style.left === "0px") {
+      miniBar.style.display = "none";
+    } else if (doorDone) {
+      miniBar.style.display = "flex";
+    }
+  });
+
+  observerSidebar.observe(sidebar, { attributes: true, attributeFilter: ['style'] });
+</script>
+
+<script>
+  const projectSection = document.querySelector('#projects');
+  const center = document.querySelector('.project-card.center');
+  const left = document.querySelector('.project-card.left');
+  const right = document.querySelector('.project-card.right');
+
+  const observe = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        center.classList.add('show');
+        setTimeout(() => {
+          left.classList.add('show');
+          right.classList.add('show');
+        }, 500);
+      } else {
+        center.classList.remove('show');
+        left.classList.remove('show');
+        right.classList.remove('show');
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observe.observe(projectSection);
+</script>
+
+
+
+<script>
+  const viewBtn = document.getElementById('viewMoreBtn'),
+        closeBtn = document.getElementById('closeBtn'),
+        overlay = document.getElementById('highlightOverlay'),
+        cards = document.querySelectorAll('.highlight-full-card'),
+        preview = document.getElementById('previewSection');
+
+  viewBtn.onclick = () => {
+    overlay.style.display = 'block';
+    cards.forEach((c, i) => {
+      setTimeout(() => c.classList.add('visible'), i * 350);
+    });
+  };
+
+  closeBtn.onclick = () => {
+    overlay.style.display = 'none';
+    cards.forEach(c => c.classList.remove('visible'));
+    preview.scrollIntoView({ behavior: 'smooth' });
+  };
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
