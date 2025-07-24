@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔥🔥</title>
-    <link rel="stylesheet" href="Style.Css">
+    <meta name="description" content="Ahmed Affan Raza — CS Student, Developer, Cyber & AI Enthusiast Portfolio">
+<link rel="icon" href="Assets/favicon.ico" />
+    <title>-🔥></title>
+    <link rel="stylesheet" href="style.Css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 <style>
@@ -54,15 +55,8 @@
 </div>
 
 
-
-<!-- Mini Sidebar Line (Always Visible) -->
-<!-- Mini Bar (simple vertical line) -->
- <!-- Mini Sidebar Trigger -->
-<!-- Mini Sidebar -->
 <div id="miniBar">
-  <!-- <div class="arrow-toggle" onclick="expandNavbar()">
-    <i class="fas fa-chevron-right"></i>
-  </div> -->
+  
   <a href="#hero" class="nav-icon"><i class="fas fa-home"></i></a>
   <a href="#about" class="nav-icon"><i class="fas fa-user"></i></a>
   <a href="#skillsSection" class="nav-icon"><i class="fas fa-code"></i></a>
@@ -74,11 +68,8 @@
 
 
 <!-- Full Sidebar (Hidden by Default) -->
-<div class="sidebar-expanded" id="fullSidebar">
-  <!-- Close Button inside Full Sidebar -->
-<!-- <div class="close-toggle" onclick="closeSidebar()">
-  <i class="fas fa-chevron-left"></i>
-</div> -->
+<!-- <div class="sidebar-expanded" id="fullSidebar">
+
 
   <a href="#hero" class="nav-btn">🏠 Home</a>
   <a href="#about" class="nav-btn">👤 About</a>
@@ -86,27 +77,11 @@
   <a href="#projects" class="nav-btn">📁 Projects</a>
   <a href="#previewSection" class="nav-btn">Highlights</a>
   <a href="#contact" class="nav-btn">📨 Contact</a>
-</div>
+</div> -->
 
 <!-- All Page Content -->
 <div class="main-content">
 
-  <!-- Top-right corner left empty -->
-
-  <!-- Bottom-right - GitHub
-  <div class="corner bottom-right">
-    <img src="./Assets/Github.jpeg" alt="GitHub" class="icon">
-  </div>
-
-  <!-- 
-  <div class="corner bottom-left">
-    <img src="./Assets/vscode.jpeg" alt="VS Code" class="icon">
-  </div> -->
-
-  <!-- Top-left inner - Dev C++ -->
-  <!-- <div class="corner devcpp-icon">
-    <img src="./Assets/Embarcadero.jpeg" alt="Dev C++" class="icon">
-  </div> -->
 
 
   <span class="name">AHMED AFFAN RAZA</span>
@@ -203,7 +178,7 @@
     
     <!-- Left Card -->
     <div class="project-card left">
-      <img src="./Assets/OTT.jpeg" alt="OTT Project" />
+      <img src="./Assets/ott.png" alt="OTT Project" />
       <h3>OTT Streaming Website</h3>
       <p>🎬 Frontend platform for series & films with responsive UI & carousels.</p>
       <a href="https://github.com/Ahmedre15/LABPROJECT" target="_blank">View Repo</a>
@@ -328,11 +303,11 @@
     <!-- Developer Contacts -->
     <div class="contact-block">
       <h3>💻 Developer Profiles</h3>
-      <p><strong>Email:</strong> <a href="mailto:ahmedaffanre15@gmail.com?subject=Collaboration%20Opportunity&body=Hey%20Affan,%0D%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20connect!">
-  <button style="padding: 10px 20px; background: #00feba; color: #111; border: none; border-radius: 25px; font-weight: bold;">
-    📩 ahmedaffanre15@gmail.com
-  </button>
+      <p><strong>Email:</strong> <a href="mailto:ahmedaffanre15@gmail.com?subject=Collaboration%20Opportunity&body=Hey%20Affan,%0D%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20connect!" 
+   style="display:inline-block; padding:10px 20px; background:#00feba; color:#111; border:none; border-radius:25px; font-weight:bold; text-decoration:none;">
+  📩 ahmedaffanre15@gmail.com
 </a>
+
 
 </p>
       <div class="contact-icons special-icons">
@@ -533,6 +508,21 @@
 //     document.getElementById("miniBar").style.display = "flex";
 //   }
 // }
+setTimeout(() => {
+  document.getElementById("hero").style.visibility = "visible";
+  document.getElementById("hero").style.opacity = 1;
+
+ const navbar = document.querySelector(".navbar");
+if (navbar) {
+  navbar.style.visibility = "visible";
+  navbar.style.opacity = 1;
+}
+
+
+  // document.getElementById("miniBarLine").style.visibility = "visible";
+  document.getElementById("miniBarLine").style.opacity = 1;
+}, 2900); // match your door animation time
+
 
   // Close sidebar when reaching skills section and show mini bar again
   window.addEventListener("scroll", () => {
