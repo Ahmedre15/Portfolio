@@ -1,3 +1,9 @@
+/* Hide content at start */
+#hero, .navbar, #miniBarLine {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
 .glow-title, .skill-heading, .goal-box h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -96,42 +102,6 @@
     transform: translateX(100%); /* Right door */
   }
 }
-
-
-
-
-
-/* @keyframes fadeInOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-} */
-/* In your hero section
-#affan-name span:first-child {
-  position: relative;
-}
-
-.matched-a {
-  position: absolute;
-  top: -40px;
-  margin-top: 20%;
-  left: 0;
-  animation: dropA 1s ease-in forwards;
-}
-
-@keyframes dropA {
-  from {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-} */
 
 
 
@@ -236,13 +206,24 @@ body::before {
   font-size: 3.5rem;
   font-weight: bold;
   color: #ffe5c2;
-  margin-top: 12%;
+  margin-top: 9%;
   margin-bottom: 20px;
-   justify-content: center;
+  justify-content: center;
   animation: glow 1s ease-in-out infinite alternate;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 
+@media (max-width: 768px) {
+  .name {
+    font-size: 2rem;           /* Smaller font for small screens */
+    margin-top: 60px;          /* Push down a little */
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
 
 .carousel {
   position: relative;
@@ -518,6 +499,12 @@ margin-left: 20%;
   padding: 10px 0;
   gap: 15px;
   box-shadow: 2px 0 10px rgba(0, 255, 255, 0.3);
+}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #miniBarLine {
+    top: 35%;
+  }
 }
 
 #miniBar .nav-icon {
@@ -1324,6 +1311,11 @@ body {
   margin-top: 1rem;
 }
 
+@media (max-width: 768px) {
+  #miniBar {
+    display: none !important;
+  }
+}
 
 
 
